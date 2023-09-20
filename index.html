@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="style.css">
+    <title>Паспорт</title>
+    <!--    <link href="./css/bootstrap.min.css" rel="stylesheet">-->
+
+</head>
+<body>
+  <img class="image" src="../passport/passport.jpeg" alt="passport">
+  <div class="passport">
+    <h2>Российская федерация</h2>
+    <p class="adress">Паспорт выдан<span class="district">Отделом УФМС Саратовской области</span></p>
+    <p class="data">Дата выдачи<span class="numbers">18.09.2003</span></p>
+    <p class="subdivision">Код подразделения<span class="code">001-001</span></p>
+  </div>
+
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+
+  <!-- next page  -->
+  <div class="next-page">
+    <p class="lastname">Фамилия<span class="my-lastname">Мурашкевич</span></p>
+    <p class="name">Имя<span class="my-name">Анастасия</span></p>
+    <p class="surname">Отчество<span class="my-surname">Сергеевна</span></p>
+    <p class="gender">Пол<span class="my-gender">жен</span></p>
+    <p class="birth-data">Дата рождения<span class="my-data">12.12.2002</span></p>
+    <p class="birth-place">Место рождения<span class="my-place">Москва</span></p>
+  </div>
+
+
+<!--<script src="./js/bootstrap.bundle.min.js"></script>-->
+<script>
+  const districtPlace = document.getElementsByClassName("district");
+  const numbersData = document.getElementsByClassName("numbers");
+
+  console.log(district);
+  console.log(numbers);
+</script>
+<pre>
+    Создать простейший макет паспорта
+    (https://migranturus.com/kakoj-v-rossii-pasport/)
+    , и использую JS, оуществить его заполнение.
+     - необходимые уникальные значения предварительно присвоить переменным
+     - необходимые значения ввести с использованием формы и данные отправить на удаленный сервер
+</pre>
+
+</body>
+</html>
